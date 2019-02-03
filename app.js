@@ -11,7 +11,7 @@ rl.on('line', (lineString) => {
   const year = parseInt(columns[0]);
   const prefecture = columns[2]; 
   const popu = parseInt(columns[7]);
-  if (year == 2010 || year == 2017) {
+  if (year == 2010 || year == 2015) {
     let value = map.get(prefecture);
     if (!value) {
       value = {
